@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C777C26CC9BA77FED543CAF /* Pods_Artemis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EE75F539D8ECE3E503B0A8 /* Pods_Artemis.framework */; };
+		44E4E96B0C4F933835173D3E /* Pods_Artemis_ArtemisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86B571437A9CE3FE08F7263 /* Pods_Artemis_ArtemisUITests.framework */; };
+		FA177F8A27740C9200F1B38E /* CommentMoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA177F8927740C9200F1B38E /* CommentMoreModel.swift */; };
+		FA22FD8D2755DE360040265C /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22FD8C2755DE360040265C /* PostView.swift */; };
+		FA2AE8782759424E00BA5951 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2AE8772759424E00BA5951 /* ViewExtension.swift */; };
+		FA2AE87A2759442C00BA5951 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2AE8792759442C00BA5951 /* UserView.swift */; };
+		FA2AE87C275945A500BA5951 /* APIResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2AE87B275945A500BA5951 /* APIResponses.swift */; };
+		FA2AE87E2759465D00BA5951 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2AE87D2759465D00BA5951 /* UserModel.swift */; };
+		FA2C1143275427A2008C8A60 /* ArtemisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C1142275427A2008C8A60 /* ArtemisApp.swift */; };
+		FA2C1145275427A2008C8A60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C1144275427A2008C8A60 /* ContentView.swift */; };
+		FA2C1147275427A3008C8A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2C1146275427A3008C8A60 /* Assets.xcassets */; };
+		FA2C114A275427A3008C8A60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2C1149275427A3008C8A60 /* Preview Assets.xcassets */; };
+		FA2C115427542B2D008C8A60 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C115327542B2D008C8A60 /* AuthenticationModel.swift */; };
+		FA38AFC627582EB9000018D9 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38AFC527582EB9000018D9 /* PostModel.swift */; };
+		FA3A81C82774DA5600A8E118 /* PollComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A81C72774DA5600A8E118 /* PollComponent.swift */; };
+		FA3A81CA2774DA7000A8E118 /* PollModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A81C92774DA7000A8E118 /* PollModel.swift */; };
+		FA3A81CC2774FA0700A8E118 /* PostsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A81CB2774FA0600A8E118 /* PostsComponent.swift */; };
+		FA3A81EA2775217500A8E118 /* PostContentComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A81E92775217500A8E118 /* PostContentComponent.swift */; };
+		FA3A81EC277533D500A8E118 /* PostActionsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A81EB277533D500A8E118 /* PostActionsComponent.swift */; };
+		FA3AAA8C2756B2910017FBBA /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AAA8B2756B2910017FBBA /* ImageController.swift */; };
+		FA3DB87E2755B2CA009F7702 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DB87D2755B2CA009F7702 /* PostsView.swift */; };
+		FA3DB8802755B439009F7702 /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DB87F2755B439009F7702 /* PostsModel.swift */; };
+		FA515B932772A651001D6EFE /* ScoreComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA515B922772A651001D6EFE /* ScoreComponent.swift */; };
+		FA515B972773798F001D6EFE /* URLComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA515B962773798F001D6EFE /* URLComponent.swift */; };
+		FA515B9F27738EFC001D6EFE /* ArtemisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA515B9E27738EFC001D6EFE /* ArtemisUITests.swift */; };
+		FA515BA127738EFC001D6EFE /* ArtemisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA515BA027738EFC001D6EFE /* ArtemisUITestsLaunchTests.swift */; };
+		FA515BA827738F9A001D6EFE /* BasicInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA515BA727738F9A001D6EFE /* BasicInteraction.swift */; };
+		FA515BAC27739053001D6EFE /* askreddit.json in Resources */ = {isa = PBXBuildFile; fileRef = FA515BAB27739053001D6EFE /* askreddit.json */; };
+		FA515BAF2773908D001D6EFE /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA515BAE2773908D001D6EFE /* XCTestCase.swift */; };
+		FA69F2372756CC2000AEA1D6 /* CommentComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69F2362756CC2000AEA1D6 /* CommentComponent.swift */; };
+		FA69F2392756CDB700AEA1D6 /* CommentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69F2382756CDB700AEA1D6 /* CommentDataModel.swift */; };
+		FA6A8D9C27739CC200C79CAE /* rm3qcl.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8D9B27739CC200C79CAE /* rm3qcl.json */; };
+		FA6A8D9E27739DF700C79CAE /* about.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8D9D27739DF700C79CAE /* about.json */; };
+		FA873C5127555D2A0041FA67 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA873C5027555D2A0041FA67 /* AuthView.swift */; };
+		FA873C5427555F230041FA67 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = FA873C5327555F230041FA67 /* SwiftKeychainWrapper */; };
+		FA873C5727557DA00041FA67 /* RequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA873C5627557DA00041FA67 /* RequestController.swift */; };
+		FAE2A6AA2773C287006D45DA /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2A6A92773C287006D45DA /* VideoModel.swift */; };
+		FAE2A6AC2773EC10006D45DA /* SortSelectorComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2A6AB2773EC10006D45DA /* SortSelectorComponent.swift */; };
+		FAEED4052775642300F68056 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEED4042775642300F68056 /* CommentModel.swift */; };
+		FAEED40927762E8700F68056 /* VotableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEED40827762E8700F68056 /* VotableModel.swift */; };
+		FAFAD02B2773A43200563B77 /* PostPreviewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAD02A2773A43200563B77 /* PostPreviewComponent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA515BA227738EFC001D6EFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA2C1137275427A2008C8A60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA2C113E275427A2008C8A60;
+			remoteInfo = Artemis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06604687E78E0790926E4C63 /* Pods-Artemis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis.release.xcconfig"; path = "Target Support Files/Pods-Artemis/Pods-Artemis.release.xcconfig"; sourceTree = "<group>"; };
+		0F955851191745F8FE68137A /* Pods-Artemis-ArtemisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis-ArtemisUITests.release.xcconfig"; path = "Target Support Files/Pods-Artemis-ArtemisUITests/Pods-Artemis-ArtemisUITests.release.xcconfig"; sourceTree = "<group>"; };
+		24EE75F539D8ECE3E503B0A8 /* Pods_Artemis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artemis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A8632018621FD481570AD2 /* Pods-Artemis-ArtemisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis-ArtemisUITests.debug.xcconfig"; path = "Target Support Files/Pods-Artemis-ArtemisUITests/Pods-Artemis-ArtemisUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B19B08DF9EDEC34053FBAAB0 /* Pods-Artemis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis.debug.xcconfig"; path = "Target Support Files/Pods-Artemis/Pods-Artemis.debug.xcconfig"; sourceTree = "<group>"; };
+		E86B571437A9CE3FE08F7263 /* Pods_Artemis_ArtemisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artemis_ArtemisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA177F8927740C9200F1B38E /* CommentMoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentMoreModel.swift; sourceTree = "<group>"; };
+		FA22FD8C2755DE360040265C /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		FA2AE8772759424E00BA5951 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		FA2AE8792759442C00BA5951 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		FA2AE87B275945A500BA5951 /* APIResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponses.swift; sourceTree = "<group>"; };
+		FA2AE87D2759465D00BA5951 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		FA2C113F275427A2008C8A60 /* Artemis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artemis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2C1142275427A2008C8A60 /* ArtemisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtemisApp.swift; sourceTree = "<group>"; };
+		FA2C1144275427A2008C8A60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA2C1146275427A3008C8A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA2C1149275427A3008C8A60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA2C115027542AAE008C8A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA2C115327542B2D008C8A60 /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		FA38AFC527582EB9000018D9 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		FA3A81C72774DA5600A8E118 /* PollComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollComponent.swift; sourceTree = "<group>"; };
+		FA3A81C92774DA7000A8E118 /* PollModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollModel.swift; sourceTree = "<group>"; };
+		FA3A81CB2774FA0600A8E118 /* PostsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsComponent.swift; sourceTree = "<group>"; };
+		FA3A81E92775217500A8E118 /* PostContentComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentComponent.swift; sourceTree = "<group>"; };
+		FA3A81EB277533D500A8E118 /* PostActionsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActionsComponent.swift; sourceTree = "<group>"; };
+		FA3AAA8B2756B2910017FBBA /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		FA3DB87D2755B2CA009F7702 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		FA3DB87F2755B439009F7702 /* PostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModel.swift; sourceTree = "<group>"; };
+		FA515B922772A651001D6EFE /* ScoreComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreComponent.swift; sourceTree = "<group>"; };
+		FA515B962773798F001D6EFE /* URLComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponent.swift; sourceTree = "<group>"; };
+		FA515B9C27738EFC001D6EFE /* ArtemisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtemisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA515B9E27738EFC001D6EFE /* ArtemisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtemisUITests.swift; sourceTree = "<group>"; };
+		FA515BA027738EFC001D6EFE /* ArtemisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtemisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA515BA727738F9A001D6EFE /* BasicInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInteraction.swift; sourceTree = "<group>"; };
+		FA515BAB27739053001D6EFE /* askreddit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = askreddit.json; sourceTree = "<group>"; };
+		FA515BAE2773908D001D6EFE /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		FA69F2362756CC2000AEA1D6 /* CommentComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentComponent.swift; sourceTree = "<group>"; };
+		FA69F2382756CDB700AEA1D6 /* CommentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDataModel.swift; sourceTree = "<group>"; };
+		FA6A8D9B27739CC200C79CAE /* rm3qcl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rm3qcl.json; sourceTree = "<group>"; };
+		FA6A8D9D27739DF700C79CAE /* about.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = about.json; sourceTree = "<group>"; };
+		FA873C5027555D2A0041FA67 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		FA873C5627557DA00041FA67 /* RequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestController.swift; sourceTree = "<group>"; };
+		FAE2A6A92773C287006D45DA /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		FAE2A6AB2773EC10006D45DA /* SortSelectorComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortSelectorComponent.swift; sourceTree = "<group>"; };
+		FAEED4042775642300F68056 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		FAEED40827762E8700F68056 /* VotableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotableModel.swift; sourceTree = "<group>"; };
+		FAFAD02A2773A43200563B77 /* PostPreviewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreviewComponent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA2C113C275427A2008C8A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA873C5427555F230041FA67 /* SwiftKeychainWrapper in Frameworks */,
+				1C777C26CC9BA77FED543CAF /* Pods_Artemis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA515B9927738EFC001D6EFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E4E96B0C4F933835173D3E /* Pods_Artemis_ArtemisUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010D16F8FE679F712F279F2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B19B08DF9EDEC34053FBAAB0 /* Pods-Artemis.debug.xcconfig */,
+				06604687E78E0790926E4C63 /* Pods-Artemis.release.xcconfig */,
+				A0A8632018621FD481570AD2 /* Pods-Artemis-ArtemisUITests.debug.xcconfig */,
+				0F955851191745F8FE68137A /* Pods-Artemis-ArtemisUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1D15739329811DDEC42B3AA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24EE75F539D8ECE3E503B0A8 /* Pods_Artemis.framework */,
+				E86B571437A9CE3FE08F7263 /* Pods_Artemis_ArtemisUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA2AE8762759423C00BA5951 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA2AE8772759424E00BA5951 /* ViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA2C1136275427A2008C8A60 = {
+			isa = PBXGroup;
+			children = (
+				FA2C1141275427A2008C8A60 /* Artemis */,
+				FA515B9D27738EFC001D6EFE /* ArtemisUITests */,
+				FA2C1140275427A2008C8A60 /* Products */,
+				010D16F8FE679F712F279F2A /* Pods */,
+				1D15739329811DDEC42B3AA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA2C1140275427A2008C8A60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA2C113F275427A2008C8A60 /* Artemis.app */,
+				FA515B9C27738EFC001D6EFE /* ArtemisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA2C1141275427A2008C8A60 /* Artemis */ = {
+			isa = PBXGroup;
+			children = (
+				FA515B912772A644001D6EFE /* Components */,
+				FA2AE8762759423C00BA5951 /* Extensions */,
+				FA873C5527557D840041FA67 /* Controllers */,
+				FA2C115227542B21008C8A60 /* Models */,
+				FA2C115127542B16008C8A60 /* Views */,
+				FA2C115027542AAE008C8A60 /* Info.plist */,
+				FA2C1142275427A2008C8A60 /* ArtemisApp.swift */,
+				FA2C1146275427A3008C8A60 /* Assets.xcassets */,
+				FA2C1148275427A3008C8A60 /* Preview Content */,
+				FA2AE87B275945A500BA5951 /* APIResponses.swift */,
+			);
+			path = Artemis;
+			sourceTree = "<group>";
+		};
+		FA2C1148275427A3008C8A60 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA2C1149275427A3008C8A60 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA2C115127542B16008C8A60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA2C1144275427A2008C8A60 /* ContentView.swift */,
+				FA873C5027555D2A0041FA67 /* AuthView.swift */,
+				FA3DB87D2755B2CA009F7702 /* PostsView.swift */,
+				FA22FD8C2755DE360040265C /* PostView.swift */,
+				FA2AE8792759442C00BA5951 /* UserView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA2C115227542B21008C8A60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA2C115327542B2D008C8A60 /* AuthenticationModel.swift */,
+				FA3DB87F2755B439009F7702 /* PostsModel.swift */,
+				FA69F2382756CDB700AEA1D6 /* CommentDataModel.swift */,
+				FA38AFC527582EB9000018D9 /* PostModel.swift */,
+				FA2AE87D2759465D00BA5951 /* UserModel.swift */,
+				FAE2A6A92773C287006D45DA /* VideoModel.swift */,
+				FA177F8927740C9200F1B38E /* CommentMoreModel.swift */,
+				FA3A81C92774DA7000A8E118 /* PollModel.swift */,
+				FAEED4042775642300F68056 /* CommentModel.swift */,
+				FAEED40827762E8700F68056 /* VotableModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA515B912772A644001D6EFE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA69F2362756CC2000AEA1D6 /* CommentComponent.swift */,
+				FA515B922772A651001D6EFE /* ScoreComponent.swift */,
+				FA515B962773798F001D6EFE /* URLComponent.swift */,
+				FAFAD02A2773A43200563B77 /* PostPreviewComponent.swift */,
+				FAE2A6AB2773EC10006D45DA /* SortSelectorComponent.swift */,
+				FA3A81C72774DA5600A8E118 /* PollComponent.swift */,
+				FA3A81CB2774FA0600A8E118 /* PostsComponent.swift */,
+				FA3A81E92775217500A8E118 /* PostContentComponent.swift */,
+				FA3A81EB277533D500A8E118 /* PostActionsComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA515B9D27738EFC001D6EFE /* ArtemisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA515BAD27739077001D6EFE /* Extensions */,
+				FA515BAA27738FBE001D6EFE /* Tests */,
+				FA515BA927738FB8001D6EFE /* Stubs */,
+			);
+			path = ArtemisUITests;
+			sourceTree = "<group>";
+		};
+		FA515BA927738FB8001D6EFE /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A8D9D27739DF700C79CAE /* about.json */,
+				FA6A8D9B27739CC200C79CAE /* rm3qcl.json */,
+				FA515BAB27739053001D6EFE /* askreddit.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		FA515BAA27738FBE001D6EFE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FA515BA027738EFC001D6EFE /* ArtemisUITestsLaunchTests.swift */,
+				FA515BA727738F9A001D6EFE /* BasicInteraction.swift */,
+				FA515B9E27738EFC001D6EFE /* ArtemisUITests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		FA515BAD27739077001D6EFE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA515BAE2773908D001D6EFE /* XCTestCase.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA873C5527557D840041FA67 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA873C5627557DA00041FA67 /* RequestController.swift */,
+				FA3AAA8B2756B2910017FBBA /* ImageController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA2C113E275427A2008C8A60 /* Artemis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA2C114D275427A3008C8A60 /* Build configuration list for PBXNativeTarget "Artemis" */;
+			buildPhases = (
+				1698275A3C984DBFC24CCB8A /* [CP] Check Pods Manifest.lock */,
+				FA2C113B275427A2008C8A60 /* Sources */,
+				FA2C113C275427A2008C8A60 /* Frameworks */,
+				FA2C113D275427A2008C8A60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Artemis;
+			packageProductDependencies = (
+				FA873C5327555F230041FA67 /* SwiftKeychainWrapper */,
+			);
+			productName = Artemis;
+			productReference = FA2C113F275427A2008C8A60 /* Artemis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA515B9B27738EFC001D6EFE /* ArtemisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA515BA427738EFC001D6EFE /* Build configuration list for PBXNativeTarget "ArtemisUITests" */;
+			buildPhases = (
+				BA3C35283C531DBE6E1CDC68 /* [CP] Check Pods Manifest.lock */,
+				FA515B9827738EFC001D6EFE /* Sources */,
+				FA515B9927738EFC001D6EFE /* Frameworks */,
+				FA515B9A27738EFC001D6EFE /* Resources */,
+				E3FB231FF871DDA886EBF5A0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA515BA327738EFC001D6EFE /* PBXTargetDependency */,
+			);
+			name = ArtemisUITests;
+			productName = ArtemisUITests;
+			productReference = FA515B9C27738EFC001D6EFE /* ArtemisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA2C1137275427A2008C8A60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					FA2C113E275427A2008C8A60 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					FA515B9B27738EFC001D6EFE = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FA2C113E275427A2008C8A60;
+					};
+				};
+			};
+			buildConfigurationList = FA2C113A275427A2008C8A60 /* Build configuration list for PBXProject "Artemis" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA2C1136275427A2008C8A60;
+			packageReferences = (
+				FA873C5227555F230041FA67 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
+			productRefGroup = FA2C1140275427A2008C8A60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA2C113E275427A2008C8A60 /* Artemis */,
+				FA515B9B27738EFC001D6EFE /* ArtemisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA2C113D275427A2008C8A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2C114A275427A3008C8A60 /* Preview Assets.xcassets in Resources */,
+				FA2C1147275427A3008C8A60 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA515B9A27738EFC001D6EFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6A8D9E27739DF700C79CAE /* about.json in Resources */,
+				FA515BAC27739053001D6EFE /* askreddit.json in Resources */,
+				FA6A8D9C27739CC200C79CAE /* rm3qcl.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1698275A3C984DBFC24CCB8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Artemis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA3C35283C531DBE6E1CDC68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Artemis-ArtemisUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3FB231FF871DDA886EBF5A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Artemis-ArtemisUITests/Pods-Artemis-ArtemisUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Artemis-ArtemisUITests/Pods-Artemis-ArtemisUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Artemis-ArtemisUITests/Pods-Artemis-ArtemisUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA2C113B275427A2008C8A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2C1145275427A2008C8A60 /* ContentView.swift in Sources */,
+				FA515B972773798F001D6EFE /* URLComponent.swift in Sources */,
+				FA3A81CA2774DA7000A8E118 /* PollModel.swift in Sources */,
+				FA38AFC627582EB9000018D9 /* PostModel.swift in Sources */,
+				FA3A81C82774DA5600A8E118 /* PollComponent.swift in Sources */,
+				FAE2A6AA2773C287006D45DA /* VideoModel.swift in Sources */,
+				FA873C5727557DA00041FA67 /* RequestController.swift in Sources */,
+				FA515B932772A651001D6EFE /* ScoreComponent.swift in Sources */,
+				FA3A81CC2774FA0700A8E118 /* PostsComponent.swift in Sources */,
+				FA22FD8D2755DE360040265C /* PostView.swift in Sources */,
+				FA3DB87E2755B2CA009F7702 /* PostsView.swift in Sources */,
+				FA2C1143275427A2008C8A60 /* ArtemisApp.swift in Sources */,
+				FA3AAA8C2756B2910017FBBA /* ImageController.swift in Sources */,
+				FA3A81EA2775217500A8E118 /* PostContentComponent.swift in Sources */,
+				FA3A81EC277533D500A8E118 /* PostActionsComponent.swift in Sources */,
+				FA873C5127555D2A0041FA67 /* AuthView.swift in Sources */,
+				FA69F2392756CDB700AEA1D6 /* CommentDataModel.swift in Sources */,
+				FA3DB8802755B439009F7702 /* PostsModel.swift in Sources */,
+				FAFAD02B2773A43200563B77 /* PostPreviewComponent.swift in Sources */,
+				FA2AE87E2759465D00BA5951 /* UserModel.swift in Sources */,
+				FA69F2372756CC2000AEA1D6 /* CommentComponent.swift in Sources */,
+				FA177F8A27740C9200F1B38E /* CommentMoreModel.swift in Sources */,
+				FAEED40927762E8700F68056 /* VotableModel.swift in Sources */,
+				FA2AE87C275945A500BA5951 /* APIResponses.swift in Sources */,
+				FA2C115427542B2D008C8A60 /* AuthenticationModel.swift in Sources */,
+				FAE2A6AC2773EC10006D45DA /* SortSelectorComponent.swift in Sources */,
+				FAEED4052775642300F68056 /* CommentModel.swift in Sources */,
+				FA2AE8782759424E00BA5951 /* ViewExtension.swift in Sources */,
+				FA2AE87A2759442C00BA5951 /* UserView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA515B9827738EFC001D6EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA515BA827738F9A001D6EFE /* BasicInteraction.swift in Sources */,
+				FA515BA127738EFC001D6EFE /* ArtemisUITestsLaunchTests.swift in Sources */,
+				FA515BAF2773908D001D6EFE /* XCTestCase.swift in Sources */,
+				FA515B9F27738EFC001D6EFE /* ArtemisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA515BA327738EFC001D6EFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA2C113E275427A2008C8A60 /* Artemis */;
+			targetProxy = FA515BA227738EFC001D6EFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA2C114B275427A3008C8A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA2C114C275427A3008C8A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA2C114E275427A3008C8A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B19B08DF9EDEC34053FBAAB0 /* Pods-Artemis.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Artemis/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GA3QKMF6Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Artemis/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.axlav.Artemis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA2C114F275427A3008C8A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06604687E78E0790926E4C63 /* Pods-Artemis.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Artemis/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GA3QKMF6Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Artemis/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.axlav.Artemis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA515BA527738EFC001D6EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0A8632018621FD481570AD2 /* Pods-Artemis-ArtemisUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GA3QKMF6Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.axlav.ArtemisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Artemis;
+			};
+			name = Debug;
+		};
+		FA515BA627738EFC001D6EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F955851191745F8FE68137A /* Pods-Artemis-ArtemisUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GA3QKMF6Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.axlav.ArtemisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Artemis;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA2C113A275427A2008C8A60 /* Build configuration list for PBXProject "Artemis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2C114B275427A3008C8A60 /* Debug */,
+				FA2C114C275427A3008C8A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA2C114D275427A3008C8A60 /* Build configuration list for PBXNativeTarget "Artemis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2C114E275427A3008C8A60 /* Debug */,
+				FA2C114F275427A3008C8A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA515BA427738EFC001D6EFE /* Build configuration list for PBXNativeTarget "ArtemisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA515BA527738EFC001D6EFE /* Debug */,
+				FA515BA627738EFC001D6EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA873C5227555F230041FA67 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA873C5327555F230041FA67 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA873C5227555F230041FA67 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FA2C1137275427A2008C8A60 /* Project object */;
+}
