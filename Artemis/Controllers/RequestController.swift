@@ -2,7 +2,7 @@ import Foundation
 import Combine
 
 func makeRequest<T: Decodable>(accessToken: String?, path: String, responseType: T.Type, body: String? = nil) -> AnyPublisher<T, NetworkError> {
-    let baseUrl = (accessToken != nil) ? ProcessInfo.processInfo.environment["REDDIT_OAUTHURL"]! : ProcessInfo.processInfo.environment["REDDIT_BASEURL"]!
+    let baseUrl = (accessToken != nil) ? ProcessInfo.processInfo.environment["REDDIT_OAUTHURL"] ?? "https://oauth.reddit.com" : ProcessInfo.processInfo.environment["REDDIT_BASEURL"] ?? "https://www.reddit.com"
     var request =  URLRequest(url: URL(string: "\(baseUrl)/\(path)")!.appendingPathExtension("json"))
     if (accessToken != nil) {
         request.setValue("bearer \(accessToken!)", forHTTPHeaderField: "authorization")

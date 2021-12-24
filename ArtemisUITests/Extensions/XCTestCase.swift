@@ -23,34 +23,35 @@ class UITestBase: XCTestCase {
             let bundle = Bundle(for: type(of: self))
             
             // Ask Bundle for URL of Stub
-            let url = bundle.url(forResource: "askreddit", withExtension: ".json")
+            let url = bundle.url(forResource: "axlavtesting", withExtension: ".json")
             
             // Use URL to Create Data Object
             return try! Data(contentsOf: url!)
         })
-        router["/r/askreddit.json"] = DataResponse(handler: { _ in
+        router["/r/axlavtesting.json"] = DataResponse(handler: { _ in
             let bundle = Bundle(for: type(of: self))
             
             // Ask Bundle for URL of Stub
-            let url = bundle.url(forResource: "askreddit", withExtension: ".json")
+            let url = bundle.url(forResource: "axlavtesting", withExtension: ".json")
             
             // Use URL to Create Data Object
             return try! Data(contentsOf: url!)
         })
-        router["/r/askreddit/comments/rm3qcl.json"] = DataResponse(handler: { _ in
-            let bundle = Bundle(for: type(of: self))
-            
-            // Ask Bundle for URL of Stub
-            let url = bundle.url(forResource: "rm3qcl", withExtension: ".json")
-            
-            // Use URL to Create Data Object
-            return try! Data(contentsOf: url!)
-        })
-        router["/user/Silent-Zebra/about.json"] = DataResponse(handler: { _ in
+        router["/user/Mrlavallee/about.json"] = DataResponse(handler: { _ in
+            print("USER")
             let bundle = Bundle(for: type(of: self))
             
             // Ask Bundle for URL of Stub
             let url = bundle.url(forResource: "about", withExtension: ".json")
+            
+            // Use URL to Create Data Object
+            return try! Data(contentsOf: url!)
+        })
+        router["/r/axlavtesting/comments/myq82u/long.json"] = DataResponse(handler: { _ in
+            let bundle = Bundle(for: type(of: self))
+            
+            // Ask Bundle for URL of Stub
+            let url = bundle.url(forResource: "long", withExtension: ".json")
             
             // Use URL to Create Data Object
             return try! Data(contentsOf: url!)

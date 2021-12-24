@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1C777C26CC9BA77FED543CAF /* Pods_Artemis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EE75F539D8ECE3E503B0A8 /* Pods_Artemis.framework */; };
 		44E4E96B0C4F933835173D3E /* Pods_Artemis_ArtemisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86B571437A9CE3FE08F7263 /* Pods_Artemis_ArtemisUITests.framework */; };
+		FA1393A42776726C0070081A /* axlavtesting.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1393A32776726C0070081A /* axlavtesting.json */; };
+		FA1393A6277672A90070081A /* about.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1393A5277672A90070081A /* about.json */; };
+		FA1393A8277673260070081A /* long.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1393A7277673260070081A /* long.json */; };
 		FA177F8A27740C9200F1B38E /* CommentMoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA177F8927740C9200F1B38E /* CommentMoreModel.swift */; };
 		FA22FD8D2755DE360040265C /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22FD8C2755DE360040265C /* PostView.swift */; };
 		FA2AE8782759424E00BA5951 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2AE8772759424E00BA5951 /* ViewExtension.swift */; };
@@ -34,12 +37,9 @@
 		FA515B9F27738EFC001D6EFE /* ArtemisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA515B9E27738EFC001D6EFE /* ArtemisUITests.swift */; };
 		FA515BA127738EFC001D6EFE /* ArtemisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA515BA027738EFC001D6EFE /* ArtemisUITestsLaunchTests.swift */; };
 		FA515BA827738F9A001D6EFE /* BasicInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA515BA727738F9A001D6EFE /* BasicInteraction.swift */; };
-		FA515BAC27739053001D6EFE /* askreddit.json in Resources */ = {isa = PBXBuildFile; fileRef = FA515BAB27739053001D6EFE /* askreddit.json */; };
 		FA515BAF2773908D001D6EFE /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA515BAE2773908D001D6EFE /* XCTestCase.swift */; };
 		FA69F2372756CC2000AEA1D6 /* CommentComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69F2362756CC2000AEA1D6 /* CommentComponent.swift */; };
 		FA69F2392756CDB700AEA1D6 /* CommentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69F2382756CDB700AEA1D6 /* CommentDataModel.swift */; };
-		FA6A8D9C27739CC200C79CAE /* rm3qcl.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8D9B27739CC200C79CAE /* rm3qcl.json */; };
-		FA6A8D9E27739DF700C79CAE /* about.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8D9D27739DF700C79CAE /* about.json */; };
 		FA873C5127555D2A0041FA67 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA873C5027555D2A0041FA67 /* AuthView.swift */; };
 		FA873C5427555F230041FA67 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = FA873C5327555F230041FA67 /* SwiftKeychainWrapper */; };
 		FA873C5727557DA00041FA67 /* RequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA873C5627557DA00041FA67 /* RequestController.swift */; };
@@ -67,6 +67,9 @@
 		A0A8632018621FD481570AD2 /* Pods-Artemis-ArtemisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis-ArtemisUITests.debug.xcconfig"; path = "Target Support Files/Pods-Artemis-ArtemisUITests/Pods-Artemis-ArtemisUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B19B08DF9EDEC34053FBAAB0 /* Pods-Artemis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis.debug.xcconfig"; path = "Target Support Files/Pods-Artemis/Pods-Artemis.debug.xcconfig"; sourceTree = "<group>"; };
 		E86B571437A9CE3FE08F7263 /* Pods_Artemis_ArtemisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artemis_ArtemisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1393A32776726C0070081A /* axlavtesting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = axlavtesting.json; sourceTree = "<group>"; };
+		FA1393A5277672A90070081A /* about.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = about.json; sourceTree = "<group>"; };
+		FA1393A7277673260070081A /* long.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = long.json; sourceTree = "<group>"; };
 		FA177F8927740C9200F1B38E /* CommentMoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentMoreModel.swift; sourceTree = "<group>"; };
 		FA22FD8C2755DE360040265C /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		FA2AE8772759424E00BA5951 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
@@ -95,12 +98,9 @@
 		FA515B9E27738EFC001D6EFE /* ArtemisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtemisUITests.swift; sourceTree = "<group>"; };
 		FA515BA027738EFC001D6EFE /* ArtemisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtemisUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FA515BA727738F9A001D6EFE /* BasicInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInteraction.swift; sourceTree = "<group>"; };
-		FA515BAB27739053001D6EFE /* askreddit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = askreddit.json; sourceTree = "<group>"; };
 		FA515BAE2773908D001D6EFE /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		FA69F2362756CC2000AEA1D6 /* CommentComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentComponent.swift; sourceTree = "<group>"; };
 		FA69F2382756CDB700AEA1D6 /* CommentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDataModel.swift; sourceTree = "<group>"; };
-		FA6A8D9B27739CC200C79CAE /* rm3qcl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rm3qcl.json; sourceTree = "<group>"; };
-		FA6A8D9D27739DF700C79CAE /* about.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = about.json; sourceTree = "<group>"; };
 		FA873C5027555D2A0041FA67 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		FA873C5627557DA00041FA67 /* RequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestController.swift; sourceTree = "<group>"; };
 		FAE2A6A92773C287006D45DA /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
@@ -262,9 +262,9 @@
 		FA515BA927738FB8001D6EFE /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				FA6A8D9D27739DF700C79CAE /* about.json */,
-				FA6A8D9B27739CC200C79CAE /* rm3qcl.json */,
-				FA515BAB27739053001D6EFE /* askreddit.json */,
+				FA1393A7277673260070081A /* long.json */,
+				FA1393A5277672A90070081A /* about.json */,
+				FA1393A32776726C0070081A /* axlavtesting.json */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -395,9 +395,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA6A8D9E27739DF700C79CAE /* about.json in Resources */,
-				FA515BAC27739053001D6EFE /* askreddit.json in Resources */,
-				FA6A8D9C27739CC200C79CAE /* rm3qcl.json in Resources */,
+				FA1393A42776726C0070081A /* axlavtesting.json in Resources */,
+				FA1393A8277673260070081A /* long.json in Resources */,
+				FA1393A6277672A90070081A /* about.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
