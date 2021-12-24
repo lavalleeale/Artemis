@@ -1,0 +1,40 @@
+import Foundation
+import Combine
+
+class UserModel: ObservableObject {
+    @Published var data: UserData?
+    @Published var age: String?
+    let accessToken: String?
+    var cancellable : Set<AnyCancellable> = Set()
+    
+    init(accessToken: String?) {
+        self.accessToken = accessToken
+    }
+    
+    func fetch (username: String) {
+        makeRequest(accessToken: accessToken, path: "user/\(username)/about", responseType: User.self).receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+//                    print("completed")
+                    break
+                case .failure(let error):
+                    switch error {
+                    case NetworkError.network:
+                        print("handle network error")
+                    case NetworkError.api(error: let error):
+                        print("handle \(error.message) in UserModel")
+                    case NetworkError.decoding:
+                        print("handle decoding error")
+                    }                }
+            }) { data in
+                self.data = data.data
+                let date = Date(timeIntervalSince1970: data.data.created_utc)
+                
+                let formatter = RelativeDateTimeFormatter()
+                formatter.unitsStyle = .short
+                self.age = String(formatter.localizedString(for: date, relativeTo: Date()).dropLast(5))
+            }
+            .store(in: &cancellable)
+    }
+}
