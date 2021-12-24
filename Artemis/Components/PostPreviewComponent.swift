@@ -10,7 +10,7 @@ struct PostPreviewComponent: View {
     
     var body: some View {
         VStack {
-            NavigationLink(destination: PostView(post: post, parentContent: "hpsvyww")) {
+            NavigationLink(destination: PostView(post: post)) {
                 VStack {
                     HStack {
                         if (post.pollData != nil) {
@@ -33,6 +33,7 @@ struct PostPreviewComponent: View {
                 }
                 .contentShape(Rectangle())
             }
+            .accessibility(identifier: "post id: \(post.id)")
             PostActionsComponent(post: post)
         }
     }

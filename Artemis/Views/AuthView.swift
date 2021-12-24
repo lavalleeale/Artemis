@@ -18,6 +18,7 @@ struct AuthView: View {
                         NavigationLink(item.username) {
                             UserView(username: item.username, authModel: authModel)
                         }
+                        .accessibility(identifier: "\(item.username) user button")
                     }.onDelete(perform: authModel.signOut)
                 }
             }

@@ -16,12 +16,10 @@ struct CommentComponent: View {
                 if (comment.kind == .t1) {
                     VStack(alignment: .leading) {
                         HStack {
-                            NavigationLink() {
+                            NavigationLink(comment.data!.author) {
                                 UserView(username: comment.data!.author, authModel: authModel)
-                            } label: {
-                                Text(comment.data!.author)
-                                //                            .overlay(Rectangle())
                             }
+                            .accessibility(identifier: "\(comment.data!.author) user button")
                             .foregroundColor(comment.data!.distinguished != nil ? Color.green : comment.data!.is_submitter ? Color.blue : Color.primary)
                             ScoreComponent(votableModel: comment.data!)
                             if (comment.data!.locked) {
@@ -59,6 +57,7 @@ struct CommentComponent: View {
                                     Button("Load \(comment.more!.count) more comments") {
                                         comment.more!.getComments(accessToken: authModel.accessToken, parent: post)
                                     }
+                                    .accessibility(identifier: "Load MoreComments with id \(comment.id)")
                                 }
                                 Divider()
                             }

@@ -11,6 +11,8 @@ struct ScoreComponent<T: VotableModel>: View {
                 .padding(.trailing, -5)
             Text(votableModel.score_hidden ? "-" : votableModel.score < 1000 ? String(votableModel.score) : String("\(round((Double(votableModel.score) / 1000) * 10) / 10)K"))
         }
+        .accessibility(addTraits: .isButton)
+        .accessibility(identifier: "Upvote \(votableModel.id)")
         .onTapGesture {
             votableModel.vote(accessToken: authModel.accessToken, direction: true)
         }

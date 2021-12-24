@@ -22,6 +22,8 @@ struct PostView: View {
                             }
                             Spacer()
                         }
+                        .accessibility(addTraits: .isButton)
+                        .accessibility(identifier: "Collapse Post")
                         .contentShape(Rectangle())
                         .onTapGesture {
                             withAnimation {
@@ -53,6 +55,7 @@ struct PostView: View {
                     NavigationLink(post.author) {
                         UserView(username: post.author, authModel: authModel)
                     }
+                    .accessibility(identifier: "\(post.author) user button")
                     .foregroundColor(.primary)
                     Spacer()
                 }

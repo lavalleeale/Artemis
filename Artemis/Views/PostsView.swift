@@ -17,6 +17,7 @@ struct PostsView: View {
             NavigationLink(destination: PostsView(postsModel: PostsModel(path: "r/\(newPath)/", accessToken: authModel.accessToken)), isActive: $showingNew) {
                 EmptyView()
             }
+            .hidden()
             PostsComponent(posts: posts)
         }
         .navigationBarTitle((posts.path != "") ? posts.path : "Home", displayMode: .inline)
