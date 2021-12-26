@@ -1,19 +1,20 @@
 import Foundation
 import Combine
 import SwiftUI
+import AVKit
 
 class PostModel: VotableModel, Decodable, Identifiable {
     enum CodingKeys: CodingKey {
         case title, id, selftext, is_self, url, post_hint, subreddit_name_prefixed, author, score, thumbnail, upvote_ratio, media, suggested_sort, poll_data, selftext_html, crosspost_parent_list, likes, num_comments, name, permalink
     }
     
-    @Published var videoModel = VideoModel()
+    @Published var player: AVPlayer?
     @Published var image: UIImage?
     @Published var imageLoader: ImageLoader = ImageLoader()
     
     @Published var comments: [CommentModel] = []
     @Published var selftext: String
-    @Published var selftext_html: String
+    @Published var selftext_html: String?
     @Published var upvote_ratio: Float
     @Published var score: Int
     @Published var sort: Sort
@@ -66,8 +67,8 @@ class PostModel: VotableModel, Decodable, Identifiable {
                 }
             }
         }
-        if (self.post_hint == .hostedVideo && self.videoModel.player == nil) {
-            self.videoModel.startPlayer(url: URL(string: self.media!.reddit_video!.fallback_url)!)
+        if (self.post_hint == .hostedVideo && self.player == nil) {
+            self.player = AVPlayer(url: URL(string: self.media!.reddit_video!.fallback_url)!)
         }
     }
     
@@ -140,7 +141,7 @@ class PostModel: VotableModel, Decodable, Identifiable {
         id = try container.decode(String.self, forKey: .id)
         is_self = try container.decode(Bool.self, forKey: .is_self)
         selftext = try container.decode(String.self, forKey: .selftext)
-        selftext_html = try container.decodeIfPresent(String.self, forKey: .selftext_html) ?? ""
+        selftext_html = try container.decodeIfPresent(String.self, forKey: .selftext_html)
         url = try container.decode(String.self, forKey: .url)
         author = try container.decode(String.self, forKey: .author)
         subreddit_name_prefixed = try container.decode(String.self, forKey: .subreddit_name_prefixed)

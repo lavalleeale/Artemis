@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1C777C26CC9BA77FED543CAF /* Pods_Artemis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EE75F539D8ECE3E503B0A8 /* Pods_Artemis.framework */; };
 		44E4E96B0C4F933835173D3E /* Pods_Artemis_ArtemisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86B571437A9CE3FE08F7263 /* Pods_Artemis_ArtemisUITests.framework */; };
+		FA0EB04C2777F3FE009D182A /* WebComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EB04B2777F3FE009D182A /* WebComponent.swift */; };
+		FA0EB0502777FA1B009D182A /* LoadingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EB04F2777FA1B009D182A /* LoadingComponent.swift */; };
+		FA0EB0522777FDE8009D182A /* LoadingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EB0512777FDE8009D182A /* LoadingModel.swift */; };
 		FA1393A42776726C0070081A /* axlavtesting.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1393A32776726C0070081A /* axlavtesting.json */; };
 		FA1393A6277672A90070081A /* about.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1393A5277672A90070081A /* about.json */; };
 		FA1393A8277673260070081A /* long.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1393A7277673260070081A /* long.json */; };
@@ -43,7 +46,6 @@
 		FA873C5127555D2A0041FA67 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA873C5027555D2A0041FA67 /* AuthView.swift */; };
 		FA873C5427555F230041FA67 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = FA873C5327555F230041FA67 /* SwiftKeychainWrapper */; };
 		FA873C5727557DA00041FA67 /* RequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA873C5627557DA00041FA67 /* RequestController.swift */; };
-		FAE2A6AA2773C287006D45DA /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2A6A92773C287006D45DA /* VideoModel.swift */; };
 		FAE2A6AC2773EC10006D45DA /* SortSelectorComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2A6AB2773EC10006D45DA /* SortSelectorComponent.swift */; };
 		FAEED4052775642300F68056 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEED4042775642300F68056 /* CommentModel.swift */; };
 		FAEED40927762E8700F68056 /* VotableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEED40827762E8700F68056 /* VotableModel.swift */; };
@@ -67,6 +69,9 @@
 		A0A8632018621FD481570AD2 /* Pods-Artemis-ArtemisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis-ArtemisUITests.debug.xcconfig"; path = "Target Support Files/Pods-Artemis-ArtemisUITests/Pods-Artemis-ArtemisUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B19B08DF9EDEC34053FBAAB0 /* Pods-Artemis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis.debug.xcconfig"; path = "Target Support Files/Pods-Artemis/Pods-Artemis.debug.xcconfig"; sourceTree = "<group>"; };
 		E86B571437A9CE3FE08F7263 /* Pods_Artemis_ArtemisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artemis_ArtemisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0EB04B2777F3FE009D182A /* WebComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebComponent.swift; sourceTree = "<group>"; };
+		FA0EB04F2777FA1B009D182A /* LoadingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingComponent.swift; sourceTree = "<group>"; };
+		FA0EB0512777FDE8009D182A /* LoadingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingModel.swift; sourceTree = "<group>"; };
 		FA1393A32776726C0070081A /* axlavtesting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = axlavtesting.json; sourceTree = "<group>"; };
 		FA1393A5277672A90070081A /* about.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = about.json; sourceTree = "<group>"; };
 		FA1393A7277673260070081A /* long.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = long.json; sourceTree = "<group>"; };
@@ -103,7 +108,6 @@
 		FA69F2382756CDB700AEA1D6 /* CommentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDataModel.swift; sourceTree = "<group>"; };
 		FA873C5027555D2A0041FA67 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		FA873C5627557DA00041FA67 /* RequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestController.swift; sourceTree = "<group>"; };
-		FAE2A6A92773C287006D45DA /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		FAE2A6AB2773EC10006D45DA /* SortSelectorComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortSelectorComponent.swift; sourceTree = "<group>"; };
 		FAEED4042775642300F68056 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		FAEED40827762E8700F68056 /* VotableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotableModel.swift; sourceTree = "<group>"; };
@@ -149,6 +153,30 @@
 				E86B571437A9CE3FE08F7263 /* Pods_Artemis_ArtemisUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA0EB04D2777F906009D182A /* PostComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FAFAD02A2773A43200563B77 /* PostPreviewComponent.swift */,
+				FA3A81C72774DA5600A8E118 /* PollComponent.swift */,
+				FAE2A6AB2773EC10006D45DA /* SortSelectorComponent.swift */,
+				FA3A81CB2774FA0600A8E118 /* PostsComponent.swift */,
+				FA3A81E92775217500A8E118 /* PostContentComponent.swift */,
+				FA3A81EB277533D500A8E118 /* PostActionsComponent.swift */,
+			);
+			path = PostComponents;
+			sourceTree = "<group>";
+		};
+		FA0EB04E2777F930009D182A /* SharedComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FA515B922772A651001D6EFE /* ScoreComponent.swift */,
+				FA515B962773798F001D6EFE /* URLComponent.swift */,
+				FA0EB04B2777F3FE009D182A /* WebComponent.swift */,
+				FA0EB04F2777FA1B009D182A /* LoadingComponent.swift */,
+			);
+			path = SharedComponents;
 			sourceTree = "<group>";
 		};
 		FA2AE8762759423C00BA5951 /* Extensions */ = {
@@ -224,11 +252,11 @@
 				FA69F2382756CDB700AEA1D6 /* CommentDataModel.swift */,
 				FA38AFC527582EB9000018D9 /* PostModel.swift */,
 				FA2AE87D2759465D00BA5951 /* UserModel.swift */,
-				FAE2A6A92773C287006D45DA /* VideoModel.swift */,
 				FA177F8927740C9200F1B38E /* CommentMoreModel.swift */,
 				FA3A81C92774DA7000A8E118 /* PollModel.swift */,
 				FAEED4042775642300F68056 /* CommentModel.swift */,
 				FAEED40827762E8700F68056 /* VotableModel.swift */,
+				FA0EB0512777FDE8009D182A /* LoadingModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,15 +264,9 @@
 		FA515B912772A644001D6EFE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FA0EB04E2777F930009D182A /* SharedComponents */,
+				FA0EB04D2777F906009D182A /* PostComponents */,
 				FA69F2362756CC2000AEA1D6 /* CommentComponent.swift */,
-				FA515B922772A651001D6EFE /* ScoreComponent.swift */,
-				FA515B962773798F001D6EFE /* URLComponent.swift */,
-				FAFAD02A2773A43200563B77 /* PostPreviewComponent.swift */,
-				FAE2A6AB2773EC10006D45DA /* SortSelectorComponent.swift */,
-				FA3A81C72774DA5600A8E118 /* PollComponent.swift */,
-				FA3A81CB2774FA0600A8E118 /* PostsComponent.swift */,
-				FA3A81E92775217500A8E118 /* PostContentComponent.swift */,
-				FA3A81EB277533D500A8E118 /* PostActionsComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -477,10 +499,10 @@
 				FA3A81CA2774DA7000A8E118 /* PollModel.swift in Sources */,
 				FA38AFC627582EB9000018D9 /* PostModel.swift in Sources */,
 				FA3A81C82774DA5600A8E118 /* PollComponent.swift in Sources */,
-				FAE2A6AA2773C287006D45DA /* VideoModel.swift in Sources */,
 				FA873C5727557DA00041FA67 /* RequestController.swift in Sources */,
 				FA515B932772A651001D6EFE /* ScoreComponent.swift in Sources */,
 				FA3A81CC2774FA0700A8E118 /* PostsComponent.swift in Sources */,
+				FA0EB04C2777F3FE009D182A /* WebComponent.swift in Sources */,
 				FA22FD8D2755DE360040265C /* PostView.swift in Sources */,
 				FA3DB87E2755B2CA009F7702 /* PostsView.swift in Sources */,
 				FA2C1143275427A2008C8A60 /* ArtemisApp.swift in Sources */,
@@ -493,7 +515,9 @@
 				FAFAD02B2773A43200563B77 /* PostPreviewComponent.swift in Sources */,
 				FA2AE87E2759465D00BA5951 /* UserModel.swift in Sources */,
 				FA69F2372756CC2000AEA1D6 /* CommentComponent.swift in Sources */,
+				FA0EB0522777FDE8009D182A /* LoadingModel.swift in Sources */,
 				FA177F8A27740C9200F1B38E /* CommentMoreModel.swift in Sources */,
+				FA0EB0502777FA1B009D182A /* LoadingComponent.swift in Sources */,
 				FAEED40927762E8700F68056 /* VotableModel.swift in Sources */,
 				FA2AE87C275945A500BA5951 /* APIResponses.swift in Sources */,
 				FA2C115427542B2D008C8A60 /* AuthenticationModel.swift in Sources */,

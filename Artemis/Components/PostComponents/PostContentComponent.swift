@@ -17,8 +17,10 @@ struct PostContentComponent: View {
             case .link:
                 URLComponent(image: $post.image, url: post.url)
             case .hostedVideo:
-                VideoPlayer(player: post.videoModel.player)
-                    .frame(height: 400)
+                if (post.player != nil) {
+                    VideoPlayer(player: post.player)
+                        .frame(height: 400)
+                }
             case .cross:
                 ZStack {
                     PostPreviewComponent(post: post.parent!)

@@ -53,7 +53,7 @@ struct PostView: View {
                     .foregroundColor(.primary)
                     Text("by")
                     NavigationLink(post.author) {
-                        UserView(username: post.author, authModel: authModel)
+                        UserView(username: post.author)
                     }
                     .accessibility(identifier: "\(post.author) user button")
                     .foregroundColor(.primary)

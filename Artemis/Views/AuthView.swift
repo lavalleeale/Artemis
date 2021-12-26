@@ -16,7 +16,7 @@ struct AuthView: View {
                 List {
                     ForEach(authModel.accounts, id: \.username) { item in
                         NavigationLink(item.username) {
-                            UserView(username: item.username, authModel: authModel)
+                            UserView(username: item.username)
                         }
                         .accessibility(identifier: "\(item.username) user button")
                     }.onDelete(perform: authModel.signOut)

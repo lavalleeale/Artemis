@@ -17,7 +17,7 @@ struct CommentComponent: View {
                     VStack(alignment: .leading) {
                         HStack {
                             NavigationLink(comment.data!.author) {
-                                UserView(username: comment.data!.author, authModel: authModel)
+                                UserView(username: comment.data!.author)
                             }
                             .accessibility(identifier: "\(comment.data!.author) user button")
                             .foregroundColor(comment.data!.distinguished != nil ? Color.green : comment.data!.is_submitter ? Color.blue : Color.primary)

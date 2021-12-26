@@ -1,13 +1,14 @@
 import SwiftUI
 
 struct UserView: View {
-    @State var username: String
     @EnvironmentObject var authModel: AuthenticationModel
     @ObservedObject var userModel: UserModel
     
-    init(username: String, authModel: AuthenticationModel) {
-        self.username = username
-        self.userModel = UserModel(accessToken: authModel.accessToken)
+    init(username: String) {
+        userModel = UserModel(username: username)
+    }
+    init (userModel: UserModel) {
+        self.userModel = userModel
     }
     
     var body: some View {
@@ -35,13 +36,13 @@ struct UserView: View {
                         }
                     }
                     Spacer()
-                    PostsComponent(posts: PostsModel(path: "u/\(username)/submitted/", accessToken: authModel.accessToken))
+                    PostsComponent(posts: PostsModel(path: "u/\(userModel.username)/submitted/", accessToken: authModel.accessToken))
                 }
             }
         }
-        .navigationBarTitle(username, displayMode: .inline)
+        .navigationBarTitle(userModel.username, displayMode: .inline)
         .onAppear {
-            self.userModel.fetch(username: username)
+            self.userModel.fetch(accessToken: authModel.accessToken)
         }
     }
 }

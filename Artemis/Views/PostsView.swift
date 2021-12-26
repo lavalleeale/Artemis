@@ -14,10 +14,12 @@ struct PostsView: View {
     
     var body: some View {
         ZStack {
-            NavigationLink(destination: PostsView(postsModel: PostsModel(path: "r/\(newPath)/", accessToken: authModel.accessToken)), isActive: $showingNew) {
-                EmptyView()
+            if (newPath != "") {
+                NavigationLink(destination: PostsView(postsModel: PostsModel(path: "r/\(newPath)/", accessToken: authModel.accessToken)), isActive: $showingNew) {
+                    EmptyView()
+                }
+                .hidden()
             }
-            .hidden()
             PostsComponent(posts: posts)
         }
         .navigationBarTitle((posts.path != "") ? posts.path : "Home", displayMode: .inline)

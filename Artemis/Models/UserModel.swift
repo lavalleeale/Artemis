@@ -4,14 +4,14 @@ import Combine
 class UserModel: ObservableObject {
     @Published var data: UserData?
     @Published var age: String?
-    let accessToken: String?
+    let username: String
     var cancellable : Set<AnyCancellable> = Set()
     
-    init(accessToken: String?) {
-        self.accessToken = accessToken
+    init(username: String) {
+        self.username = username
     }
     
-    func fetch (username: String) {
+    func fetch (accessToken: String?) {
         makeRequest(accessToken: accessToken, path: "user/\(username)/about", responseType: User.self).receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 switch completion {

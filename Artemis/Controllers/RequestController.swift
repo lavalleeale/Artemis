@@ -8,7 +8,7 @@ func makeRequest<T: Decodable>(accessToken: String?, path: String, responseType:
         request.setValue("bearer \(accessToken!)", forHTTPHeaderField: "authorization")
     }
     request.setValue("ios:com.axlav.artemis:v1.0.0 (by /u/mrlavallee)", forHTTPHeaderField: "User-Agent")
-    if ((body) != nil) {
+    if (body != nil) {
         request.httpBody = body!.data(using: .utf8)
         request.httpMethod = "POST"
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")

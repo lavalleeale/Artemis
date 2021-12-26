@@ -6,7 +6,11 @@ struct ContentView: View {
     var body: some View {
         TabView {
             NavigationView {
+#if DEBUG
                 PostsView(postsModel: PostsModel(path: "r/axlavtesting/", accessToken: authModel.accessToken))
+#else
+                PostsView(postsModel: PostsModel(path: "", accessToken: authModel.accessToken))
+#endif
             }
             .navigationViewStyle(StackNavigationViewStyle())
             .tabItem {

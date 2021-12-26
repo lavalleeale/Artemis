@@ -37,6 +37,6 @@ struct SortSelectorComponent: View {
     }
 }
 
-enum ThingType {
-    case comments, posts
+enum ThingType: String {
+    case comments, posts, user
 }

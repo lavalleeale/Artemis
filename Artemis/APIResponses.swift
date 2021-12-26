@@ -42,9 +42,7 @@ struct PostWithComments: Decodable {
         
         let children = try container.decode(Comments.self).data.children
         
-        for comment in children {
-            self.children.append(comment)
-        }
+        self.children.append(contentsOf: children)
     }
 }
 

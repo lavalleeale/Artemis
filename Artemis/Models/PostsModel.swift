@@ -63,7 +63,7 @@ class PostsModel: ObservableObject {
                         } else if (error.reason == "private") {
                             self.error = .privateSub
                         }
-                        print("handle \(error.message) in PostsModel")
+                        print("handle \(error.message) in PostsModel with path \(self.path)")
                     case NetworkError.decoding(error: let error):
                         print("decoding error")
                         print(error.error)
