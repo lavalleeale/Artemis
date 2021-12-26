@@ -2,10 +2,6 @@ import XCTest
 
 class ArtemisUITestsLaunchTests: UITestBase {
 
-    override class var runsForEachTargetApplicationUIConfiguration: Bool {
-        true
-    }
-
     override func setUpWithError() throws {
         continueAfterFailure = false
     }

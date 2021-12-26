@@ -15,6 +15,7 @@ class BasicInteraction: UITestBase {
         XCTAssert(app.staticTexts.element(matching: NSPredicate(format: "label CONTAINS[c] %@", "AskReddit")).exists)
         app.buttons["post id: myq82u"].firstMatch.tap()
         app.buttons["Collapse Post"].firstMatch.tap()
+        sleep(1)
         app.buttons["Mrlavallee user button"].tap()
         XCTAssert(app.staticTexts.element(matching: NSPredicate(format: "label CONTAINS[c] %@", "440")).exists)
     }

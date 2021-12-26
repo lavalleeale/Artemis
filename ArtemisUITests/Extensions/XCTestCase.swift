@@ -38,7 +38,6 @@ class UITestBase: XCTestCase {
             return try! Data(contentsOf: url!)
         })
         router["/user/Mrlavallee/about.json"] = DataResponse(handler: { _ in
-            print("USER")
             let bundle = Bundle(for: type(of: self))
             
             // Ask Bundle for URL of Stub
